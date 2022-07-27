@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./scripts/CardComponent.js"></script>
+  <script src="./scripts/CardItem.js"></script>
+  <!-- <script src="./scripts/CardList.js" defer type="module"></script> -->
+  <script src="./scripts/app.js" defer type="module"></script>
+  <title>English for Kids</title>
+</head>
+<body>
+  <div class="dark-layout"></div>
+  <nav>
+    <div class="menu-icon">
+      <div class="menu-btn"></div>
+    </div>
+    <div class="nav-wrapper hide-nav-menu">
+      <ul class="main-nav">
+        <li class="main-nav-item">Main Page</li>
+        <li class="nav-item active-nav" id="actionA">🏃‍♂️ ActionA</li>
+        <li class="nav-item" id="actionB">🤾 ActionB</li>
+        <li class="nav-item" id="animalA">🐅 AnimalA</li>
+        <li class="nav-item" id="animalB">🐕 AnimalB</li>
+        <li class="nav-item" id="clothes">👚 Clothes</li>
+        <li class="nav-item" id="emotions">😏 Emotions</li>
+        <li class="nav-item" id="fruit">🥝 Fruit</li>
+        <li class="nav-item" id="places">🏛️ Places</li>
+      </ul>
+    </div>
+    <h1 class="main-heading">English for kids</h1>
+    <div class="train-play">
+      <h3 class="play">Play</h3>
+      <div class="switch-button train-active">
+        <div class="switch-circle"></div>
+      </div>
+      <h3 class="train">Train</h3>
+    </div>
+  </nav>
+  <section class="main-section">
+    <div class="container"></div>
+    <button class="train-button"><strong>PLAY</strong></button>
+    <div class="btn-container">
+      <button class="btn-statistics">🥇 Check your statistics</button>      
+    </div>
+    <button class="repeat-button">
+      <img src="./img/repeat.svg" alt="Repeat button">
+    </button>    
+    <table class="stats-table table-sortable">
+      <thead>
+        <tr>
+          <th>Word</th>
+          <th>Translation</th>
+          <th>Category</th>
+          <th>Clicks</th>
+          <th>Correct</th>
+          <th>Wrong</th>
+          <th>Correct %</th>
+        </tr>
+      </thead>
+      <tbody id="tableData"></tbody>
+    </table>
+  </section>
+  <section class="stars-section">    
+  </section>  
+</body>
+</html>
